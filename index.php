@@ -12,15 +12,16 @@ session_start();
         <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url ?>assets/img/apple-icon.png">
         <link rel="icon" type="image/png" href="<?= base_url ?>assets/img/favicon.png">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>imcrm</title>
+        <title>imSupport</title>
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
         <!--     Fonts and icons     -->
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
         <!-- CSS Files -->
         <link href="<?= base_url ?>assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
-        <!-- CSS Just for demo purpose, don't include it in your project -->
-        <link href="<?= base_url ?>assets/demo/demo.css" rel="stylesheet" />
+        
+        <link href="" rel="stylesheet" />
+        
     </head>
 
     <body class="off-canvas-sidebar">
@@ -42,10 +43,10 @@ session_start();
                 <div class="container">
                     <div class="row" data-color="green">
                         <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
-                            <form class="form" method="POST" action="<?= base_url ?>usuario/validate">
+                            <form class="form" method="POST" action="<?= base_url ?>user/validate">
                                 <div class="card card-login card-hidden">
                                     <div class="card-header card-header-success text-center">
-                                        <h4 class="card-title">Ingreso IM FEL</h4>
+                                        <h4 class="card-title">Ingreso a imSupport</h4>
                                         <div class="social-line">
                                             <i class="material-icons">fingerprint</i>
                                         </div>
@@ -59,10 +60,19 @@ session_start();
                                                         <i class="material-icons">face</i>
                                                     </span>
                                                 </div>
-                                                <input type="text" name="txt_usuario" id="txt_usuario" class="form-control form-control-success" placeholder="Nombre de Usuario *">
+                                                <input type="text" name="txt_userNickname" id="txt_userNickname" class="form-control form-control-success" placeholder="Nombre de Usuario *" require>
                                             </div>
                                         </span>
-
+                                        <span class="bmd-form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">
+                                                        <i class="material-icons">alternate_email</i>
+                                                    </span>
+                                                </div>
+                                                <input type="text" name="txt_userEmail" id="txt_userEmail" class="form-control form-control-success" placeholder="Correo *" require>
+                                            </div>
+                                        </span>
                                         <span class="bmd-form-group">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
@@ -70,7 +80,7 @@ session_start();
                                                         <i class="material-icons">lock_outline</i>
                                                     </span>
                                                 </div>
-                                                <input type="password" name="txt_contrasena" id="txt_contrasena" class="form-control" placeholder="Contraseña *">
+                                                <input type="password" name="txt_userPassword" id="txt_userPassword" class="form-control" placeholder="Contraseña *" require>
                                             </div>
                                         </span>
                                     </div>
@@ -89,10 +99,10 @@ session_start();
                 </div>
                 <footer class="footer">
                     <div class="container">
-                        <div class="copyright float-right">
-                            IM Delivery | Developed By
-                            <a href="https://www.ima.com.gt" target="_blank">IMA</a> &copy;
-                            2021
+                        <div class="copyright float-right">                            
+                            <b>imSupport</b> Co-developed by 
+                            <a href="https://www.ima.com.gt" target="_blank">IMA</a> &copy; 
+                            & dennis.trinidad@ima.com.gt | 2022  
                         </div>
                     </div>
                 </footer>
@@ -102,9 +112,7 @@ session_start();
         <script src="<?= base_url ?>assets/js/core/jquery.min.js"></script>
         <script src="<?= base_url ?>assets/js/core/popper.min.js"></script>
         <script src="<?= base_url ?>assets/js/core/bootstrap-material-design.min.js"></script>
-        <script src="<?= base_url ?>assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-        <!--  Google Maps Plugin    -->
-        <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+        <script src="<?= base_url ?>assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>        
         <!-- Chartist JS -->
         <script src="<?= base_url ?>assets/js/plugins/chartist.min.js"></script>
         <!--  Notifications Plugin    -->

@@ -1,0 +1,84 @@
+{
+    "body": {
+        "store": {
+            "storeCode": 9
+        },
+        "user": {
+            "userCode": 50
+        },
+        "transmitter": {
+            "transmitterMembership": "GEN",
+            "transmitterType": "FACT",
+            "transmitterEstablishmentCode": 1,
+            "transmitterEmail": "nattotrinidad@gmail.com",
+            "transmitterTaxDocument": "11700054K",
+            "transmitterComercialName": "Ideas Multiplataforma Avanzadas",
+            "transmitterName": "RENATTO GABRIEL TRINIDAD LOPEZ",
+            "transmitterAddress": "Ciudad IMA",
+            "transmitterZipCode": "1001",
+            "transmitterMunicipality": "Guatemala",
+            "transmitterDepartment": "Guatemala",
+            "transmitterCountry": "GT",
+            "transmitterPrefix": "IMA_DEMO",
+            "transmitterUser": "IMA_DEMO",
+            "transmitterKey": "C39ED786200373DB6397E33493B22729",
+            "transmitterToken": "90c8832f0bc961dab93635c37ef575c0",
+            "transmitterPhraseCode": 1,
+            "transmitterPhraseType": 1
+        },
+        "receiver": {
+            "receiverAddress": "Ciudad",
+            "receiverCode": 24,
+            "receiverDeleted": 0,
+            "receiverEmail": "dtrinidad@ima.com.gt",
+            "receiverName": "Consumidor Final",
+            "receiverStatus": 1,
+            "receiverTaxDocument": "CF",
+            "receiverZipCode": 0,
+            "receiverCountry": "GT"
+        },
+        "invoice": {
+            "invoiceCode": "26e5c422-4c58-4282-8775-6c08b4efd839",
+            "invoiceCurrency": "GTQ",
+            "invoiceTaxShortName": "IVA",
+            "invoiceDate": "2022-09-02",
+            "invoiceInternSerial": "A",
+            "invoiceTaxValue": 1.0982,
+            "invoiceTotal": 10.25,
+            "invoiceOilTaxValue": 0,
+            "invoiceInternNumber": 92
+        },
+        "phrase": [
+            {
+                "phraseStage": "1",
+                "phrase": "1"
+            }
+        ],
+        "detail": [
+            {
+                "subsidio": 0,
+                "isOil": null,
+                "taxOilUP": 0,
+                "taxOilAmount": 0,
+                "taxOilName": null,
+                "taxOilCode": null,
+                "taxOilQuantity": 1,
+                "itemCode": 1057,
+                "measure": "UNI",
+                "taxCode": 1,
+                "taxName": "IVA",
+                "isService": "B",
+                "quantity": 1,
+                "description": "10003-Plato de Ceramica",
+                "discount": 0,
+                "unitPrice": 10.25,
+                "price": 10.25,
+                "taxAmount": 1.0982,
+                "taxableAmount": 9.1518,
+                "total": 10.25
+            }
+        ],
+        "provider": "infile",
+        "serial": []
+    }
+}

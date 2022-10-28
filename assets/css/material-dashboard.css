@@ -6955,7 +6955,7 @@ fieldset[disabled][disabled] .btn.btn-raised, .btn.btn-raised.disabled, .btn.btn
 .bg-inverse .btn.btn-outline-primary:active, .bg-inverse .btn.btn-outline-primary.active,
 .open > .bg-inverse .btn.btn-outline-primary.dropdown-toggle,
 .show > .bg-inverse .btn.btn-outline-primary.dropdown-toggle {
-  color: #9c27b0;
+ color: #4caf50; /* 9c27b0 cambio para el color de fecha */
   background-color: rgba(204, 204, 204, 0.15);
   border-color: rgba(204, 204, 204, 0.15);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
@@ -6966,7 +6966,7 @@ fieldset[disabled][disabled] .btn.btn-raised, .btn.btn-raised.disabled, .btn.btn
 .show > .bg-inverse .btn.btn-outline-primary.dropdown-toggle:hover,
 .show > .bg-inverse .btn.btn-outline-primary.dropdown-toggle:focus,
 .show > .bg-inverse .btn.btn-outline-primary.dropdown-toggle.focus {
-  color: #9c27b0;
+ color: #4caf50; /* 9c27b0 cambio para el color de fecha */
   background-color: rgba(204, 204, 204, 0.25);
   border-color: rgba(204, 204, 204, 0.25); }
 .open > .bg-inverse .btn.btn-outline-primary.dropdown-toggle.bmd-btn-icon {
@@ -8172,7 +8172,7 @@ fieldset[disabled][disabled] .form-control, .form-control.disabled, .form-contro
 
 .is-focused [class^='bmd-label'],
 .is-focused [class*=' bmd-label'] {
-  color: #9c27b0; }
+ color: #4caf50; /* 9c27b0 cambio para el color de fecha */ }
 
 .is-focused .bmd-label-placeholder {
   color: #999999; }
@@ -10348,7 +10348,7 @@ html[dir="rtl"] .form-check .form-check-sign .check:before {
 .alert.alert-primary {
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4); }
 .alert.alert-primary i {
-  color: #9c27b0; }
+ color: #4caf50; /* 9c27b0 cambio para el color de fecha */ }
 .alert.alert-rose {
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4); }
 .alert.alert-rose i {
@@ -10541,7 +10541,7 @@ html[dir="rtl"] .form-check .form-check-sign .check:before {
 .dropdown-menu a:focus,
 .dropdown-menu a:active {
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(160, 136, 16, 0.4);
-  background-color: #ff9a52; /*aca sombra color sobre las opciones a elegir*/
+  background-color: #c9e7cb; /*aca sombra color sobre las opciones a elegir*/
   color: #FFFFFF; }
 
 a[data-toggle="collapse"][aria-expanded="true"] .caret,
@@ -10898,7 +10898,7 @@ thead.thead-inverse th,
   overflow: hidden; }
 
 .icon.icon-primary {
-  color: #9c27b0; }
+ color: #4caf50; /* 9c27b0 cambio para el color de fecha */ }
 
 .icon.icon-info {
   color: #00bcd4; }
@@ -19182,7 +19182,7 @@ select.selectpicker {
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(177, 148, 8, 0.4); }
 /*Color de opcion ya seleccionada*/
 .bootstrap-select .dropdown-item.active {
-  background: #efcd29 ;
+  background: #4caf50 ;
   color: #ffffff; }
 
 select.bs-select-hidden,

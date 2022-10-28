@@ -1,18 +1,38 @@
 <?php
+require_once 'models/notification.php';
 
-class homeController {
+class homeController
+{
 
-    public function index() {
-        #Validar que este loggeado
-        utils::isIdentity();
+    public function getAjax()
+    {
+        $notification = new notification();
+        
+        if (isset($_GET['getNotification'])) {
+            $userCode = $_SESSION['identity-imsupport']->userCode;
+            $notification_list = $notification->getNotificationByUser($userCode);
+            $data = array();
 
-        $id_comercio = $_SESSION['identity-imfel']->idComercio;
+            while ($row = $notification_list->fetch_assoc()) {
+                $data[] = $row;
+            }
+            echo json_encode($data);
+            die();            
+        }
 
-        /*$inventario = new inventario();
-        $inventario->setIdEmpresa($id_empresa);
-        $listado_alertas = $inventario->getAlertas();
-        */
-        require_once 'views/home/home.php';
+        if (isset($_GET['notificationUpdate'])) {
+            $_notificationCode = $_GET['notificationCode'];        
+            $result = $notification->update($_notificationCode);
+            
+            echo $result;
+            die();
+        }
     }
 
+    public function index()
+    {
+        #Validar que este loggeado
+        utils::isIdentity();
+        require_once 'views/home/home.php';
+    }
 }

@@ -1,0 +1,71 @@
+{
+    "job": {
+        "jobDay": "10",
+        "jobDeleted": 0,
+        "jobLastDay": 0
+    },
+    "store": {
+        "storeCode": 1
+    },
+    "user": {
+        "userCode": 1
+    },
+    "transmitter": {
+        "transmitterMembership": "GEN",
+        "transmitterType": "FACT",
+        "transmitterEstablishmentCode": 1,
+        "transmitterEmail": "administrator@clever.com.gt",
+        "transmitterTaxDocument": "95522840",
+        "transmitterComercialName": "Clever",
+        "transmitterName": "Arauko solution",
+        "transmitterAddress": "Ciudad de Guatemala",
+        "transmitterZipCode": "1001",
+        "transmitterMunicipality": "Guatemala",
+        "transmitterDepartment": "Guatemala",
+        "transmitterCountry": "GT",
+        "transmitterPrefix": "95522840",
+        "transmitterUser": "95522840",
+        "transmitterKey": "C84BD017A61EF7F512DAC9D3570F7A85",
+        "transmitterToken": "321a0fc99b1dcbec25f9b5dc532d8e00",
+        "transmitterPhraseCode": 2,
+        "transmitterPhraseType": 1
+    },
+    "receiver": {
+        "receiverAddress": "Ciudad",
+        "receiverCode": 729,
+        "receiverDeleted": 0,
+        "receiverEmail": "dennis.trinidad@ima.com.gt",
+        "receiverName": "Consumidor Final",
+        "receiverStatus": 1,
+        "receiverTaxDocument": "CF",
+        "receiverZipCode": 0,
+        "receiverCountry": "GT"
+    },
+    "invoice": {
+        "invoiceCode": 1,
+        "invoiceCurrency": "GTQ",
+        "invoiceTaxShortName": "IVA",
+        "invoiceDate": "2022-07-14",
+        "invoiceInternSerial": "A",
+        "invoiceTaxValue": 0.107143,
+        "invoiceTotal": 1
+    },
+    "detail": [
+        {
+            "itemCode": 0,
+            "measure": "UNI",
+            "taxCode": 1,
+            "taxName": "IVA",
+            "isService": "S",
+            "quantity": 1,
+            "description": "den",
+            "unitPrice": 1,
+            "price": 1,
+            "discount": 0,
+            "taxAmount": 0.107143,
+            "taxableAmount": 0.892857,
+            "total": 1
+        }
+    ],
+    "provider": "infile"
+}

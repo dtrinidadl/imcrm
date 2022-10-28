@@ -19,10 +19,12 @@ if (class_exists($nombre_controlador)) {
   $controlador = new $nombre_controlador();
 
   if (class_exists($nombre_controlador) && method_exists($controlador, "getAjax")) {
-
     $controlador->getAjax();
   }
 } else {
+  ini_set('display_errors', 1);
+  ini_set('display_startup_errors', 1);
+  error_reporting(E_ALL);
   show_error();
 }
 

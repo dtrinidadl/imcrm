@@ -1,19 +1,19 @@
 </div>
 </div>
-<footer class="footer">
+<footer class="footer" style="background: #e1e3e1 !important;">
   <div class="container-fluid">
     <div class="copyright float-right">
-      IM FEL | Desarrollado por
-      <a href="https://www.ima.com.gt" target="_blank" style="color: #4caf50 !important;">IMA</a> &copy;
-      2021
+      <b>imSupport</b> Co-developed by
+      <a href="https://www.ima.com.gt" target="_blank">IMA</a> &copy;
+      & dennis.trinidad@ima.com.gt | 2022
     </div>
   </div>
 </footer>
 </div>
-</div>  
+</div>
 <script>
-  $(document).ready(function () {
-    $().ready(function () {
+  $(document).ready(function() {
+    $().ready(function() {
       $sidebar = $('.sidebar');
 
       $sidebar_img_container = $sidebar.find('.sidebar-background');
@@ -33,8 +33,7 @@
 
       }
 
-      $('.fixed-plugin a').click(function (event) {
-        // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
+      $('.fixed-plugin a').click(function(event) {
         if ($(this).hasClass('switch-trigger')) {
           if (event.stopPropagation) {
             event.stopPropagation();
@@ -44,7 +43,7 @@
         }
       });
 
-      $('.fixed-plugin .active-color span').click(function () {
+      $('.fixed-plugin .active-color span').click(function() {
         $full_page_background = $('.full-page-background');
 
         $(this).siblings().removeClass('active');
@@ -65,7 +64,7 @@
         }
       });
 
-      $('.fixed-plugin .background-color .badge').click(function () {
+      $('.fixed-plugin .background-color .badge').click(function() {
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
 
@@ -76,7 +75,7 @@
         }
       });
 
-      $('.fixed-plugin .img-holder').click(function () {
+      $('.fixed-plugin .img-holder').click(function() {
         $full_page_background = $('.full-page-background');
 
         $(this).parent('li').siblings().removeClass('active');
@@ -86,7 +85,7 @@
         var new_image = $(this).find("img").attr('src');
 
         if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-          $sidebar_img_container.fadeOut('fast', function () {
+          $sidebar_img_container.fadeOut('fast', function() {
             $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
             $sidebar_img_container.fadeIn('fast');
           });
@@ -95,7 +94,7 @@
         if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
           var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
 
-          $full_page_background.fadeOut('fast', function () {
+          $full_page_background.fadeOut('fast', function() {
             $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
             $full_page_background.fadeIn('fast');
           });
@@ -114,7 +113,7 @@
         }
       });
 
-      $('.switch-sidebar-image input').change(function () {
+      $('.switch-sidebar-image input').change(function() {
         $full_page_background = $('.full-page-background');
 
         $input = $(this);
@@ -146,7 +145,7 @@
         }
       });
 
-      $('.switch-sidebar-mini input').change(function () {
+      $('.switch-sidebar-mini input').change(function() {
         $body = $('body');
 
         $input = $(this);
@@ -161,20 +160,17 @@
 
           $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
 
-          setTimeout(function () {
+          setTimeout(function() {
             $('body').addClass('sidebar-mini');
 
             md.misc.sidebar_mini_active = true;
           }, 300);
         }
-
-        // we simulate the window Resize so the charts will get updated in realtime.
-        var simulateWindowResize = setInterval(function () {
+        var simulateWindowResize = setInterval(function() {
           window.dispatchEvent(new Event('resize'));
         }, 180);
 
-        // we stop the simulation of Window Resize after the animations are completed
-        setTimeout(function () {
+        setTimeout(function() {
           clearInterval(simulateWindowResize);
         }, 1000);
 
@@ -183,7 +179,7 @@
   });
 </script>
 <script>
-  $(document).ready(function () {
+  $(document).ready(function() {
     $('#datatables').DataTable({
       "pagingType": "full_numbers",
       "lengthMenu": [
@@ -209,50 +205,26 @@
         searchPlaceholder: "Filtrar",
       }
     });
-
-//        var table = $('#datatable').DataTable();
-//
-//        // Edit record
-//        table.on('click', '.edit', function () {
-//            $tr = $(this).closest('tr');
-//            var data = table.row($tr).data();
-//            alert('You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.');
-//        });
-//
-//        // Delete a record
-//        table.on('click', '.remove', function (e) {
-//            $tr = $(this).closest('tr');
-//            table.row($tr).remove().draw();
-//            e.preventDefault();
-//        });
-//
-//        //Like record
-//        table.on('click', '.like', function () {
-//            alert('You clicked on Like button');
-//        });
   });
-
 </script>
 
 <script>
-  $(document).ready(function () {
+  $(document).ready(function() {
     $('#fecha').mask('00/00/0000');
   });
 </script>
 
 <script>
-  $(document).ready(function () {
-    // Initialise the wizard
+  $(document).ready(function() {
     demo.initMaterialWizard();
-    setTimeout(function () {
+    setTimeout(function() {
       $('.card.card-wizard').addClass('active');
     }, 600);
   });
 </script>
 
-<!-- Select2 -->
 <script src="<?= base_url ?>assets/vendor_components/select2/dist/js/select2.full.js"></script>
-
+<script src="<?= base_url ?>assets/js/ckeditor/ckeditor.js"></script>
 </body>
 
 </html>
